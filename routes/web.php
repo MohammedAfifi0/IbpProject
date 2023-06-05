@@ -40,8 +40,9 @@ Route::get('/pomodoro', function () {
     return view('pomodoro.app');
 })->name('pomodoro');
 
-
-
+Route::get('/adminlte', function () {
+    return view('layouts.adminlte');
+});
 
 
 require __DIR__ . '/auth.php';
