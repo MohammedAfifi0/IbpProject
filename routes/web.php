@@ -45,4 +45,10 @@ Route::get('/adminlte', function () {
 });
 
 
+Route::get('/shop', function () {
+    return view('shop.shop');
+})->name('shop');
+
+
+
 require __DIR__ . '/auth.php';
